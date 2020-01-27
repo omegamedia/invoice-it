@@ -2,17 +2,17 @@ import generator from './classes';
 
 generator.configure({
   emitter: {
-    name: 'Your company',
-    street_number: '10',
-    street_name: 'wall street',
-    zip_code: '77340',
-    city: 'New York',
+    name: 'OmniMatrix OÜ',
+    street_number: '1',
+    street_name: 'Kaarli puiestee',
+    zip_code: '10142',
+    city: 'Tallinn',
     phone: '01 00 00 00 00',
-    mail: 'contact@website.com',
-    website: 'www.website.com',
+    mail: 'support@nordikcoin.com',
+    website: 'www.nordikcoin.com',
   },
   global: {
-    logo: 'http://placehold.it/230x70&text=logo',
+    logo: '${__dirname}/../assets/nordikcoin-logo.png',
     order_reference_pattern: '$prefix{OR}$date{YYMM}$separator{-}$id{00000}',
     invoice_reference_pattern: '$prefix{IN}$date{YYMM}$separator{-}$id{00000}',
     order_template: `${__dirname}/../static/order.pug`,
@@ -25,4 +25,6 @@ generator.configure({
   },
 });
 
+    // logo: 'http://placehold.it/230x70&text=logo',
 export default generator;
+			
